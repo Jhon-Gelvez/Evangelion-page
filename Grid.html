@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Grid.css">
+    <link rel="icon" href="https://i.pinimg.com/564x/7b/46/f3/7b46f36226cb5217e119e9566b37e0f4.jpg" type="image/jpg">
+    <title>Grid project</title>
+</head>
+
+<body>
+    <header class="header">
+        <input class="header__checkbox" type="checkbox" id="open-menu">
+        <label for="open-menu" class="header__open-nav-button" role="button">=</label>
+        <div class="header__logo-container">
+            <img src="https://m.media-amazon.com/images/M/MV5BZjZjZGI3ZDQtODNmZC00NjE0LTlmYTUtOTljMWI2YjNmMTQ0XkEyXkFqcGc@._V1_.jpg
+            " alt="logo de evangelion" class="header__logo">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="#footer">About</a></li>
+                <li class="header__nav-item"><a href="#">Portfolio</a></li>
+                <li class="header__nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="profile" id="profile">
+        <div class="profile__wrapper">
+            <div class="profile__img-container"><img class="profile__img"
+                    src="https://i.pinimg.com/736x/ce/cb/32/cecb324060ed73d4597f3114185b6955.jpg"
+                    alt="Evangelion portada"></div>
+        </div>
+        <div class="profile__data-container">
+            <div class="profile__data">
+                <div class="profile__description">
+                    <h1>Neon Genesis Evangelion</h1>
+                    <p>Neon Genesis Evangelion narra la historia de un futuro distópico donde la humanidad enfrenta una
+                        amenaza apocalíptica: los "Ángeles", seres gigantescos que amenazan la existencia. La
+                        organización paramilitar NERV utiliza los Evangelions, mechas gigantes pilotados por
+                        adolescentes, para defender a la humanidad de estos ataques. </p>
+                </div>
+                <div class="profile__skills-container">
+                    <h2>Sincronización</h2>
+                    <ul>
+                        <li class="profile__skill">
+                            <div class="load-bar">
+                                <div class="load-bar__bar bar--01">50%</div>
+                            </div>
+                            <span class="profile__character-name">Shinji </span>
+                        </li>
+
+                        <li class="profile__skill">
+                            <div class="load-bar">
+                                <div class="load-bar__bar bar--00">70%</div>
+                            </div>
+                            <span class="profile__character-name">Rei </span>
+                        </li>
+
+                        <li class="profile__skill">
+                            <div class="load-bar">
+                                <div class="load-bar__bar bar--02">80%</div>
+                            </div>
+                            <span class="profile__character-name">Asuka </span>
+                        </li>
+
+                        <li class="profile__skill">
+                            <div class="load-bar">
+                                <div class="load-bar__bar bar--03">50%
+                                </div>
+                            </div>
+                            <span class="profile__character-name">Rei IV </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="portfolio" id="portfolio">
+        <h2 class="portfolio__tittle">IMPACTOS</h2>
+        <div class="portfolio__project-container">
+            <div class="portfolio__project project-background--01">
+                <h2 class="porfolio__project-name">PRIMER IMPACTO</h2>
+            </div>
+            <div class="portfolio__project project-background--02">
+                <h2 class="porfolio__project-name">SEGUNDO IMPACTO</h2>
+            </div>
+            <div class="portfolio__project project-background--03">
+                <h2 class="porfolio__project-name project--02">TERCER IMPACTO</h2>
+            </div>
+            <div class="portfolio__project project-background--04">
+                <h2 class="porfolio__project-name">CUARTO IMPACTO</h2>
+            </div>
+        </div>
+    </section>
+    <section class="form" id="contact">
+        <h2 class="form__tittle">CONTACT</h2>
+        <form class="form__form" action="">
+            <div class="form__input-container">
+                <label for="">Nombre
+                    <input type="text" placeholder="Elon Musk">
+                </label>
+            </div>
+            <div class="form__input-container">
+                <label for="">Mail
+                    <input type="email" placeholder="ElonMusk@gmail.com">
+                </label>
+            </div>
+            <div class="form__input-container">
+                <label for="">Mensaje
+                    <textarea type="text" placeholder="Hola..."></textarea>
+                </label>
+            </div>
+            <div class="form__input-container">
+                <button class="button-submit" type="submit">Enviar</button>
+            </div>
+        </form>
+    </section>
+    <section class="footer" id="footer">
+        <footer class="footer__container">
+            <p>&copy; 2025 Jhon Gelvez. Todos los derechos reservados.</p>
+
+            <div class="footer__links">
+                <p>Mis redes</p>
+                <a class="footer__link" href="https://facebook.com/JhonGelvez" target="_blank">Facebook</a>
+                <a class="footer__link" href="https://instagram.com/jhonjairogelvezgomez" target="_blank">Instagram</a>
+            </div>
+        </footer>
+    </section>
+</body>
+<script>
+    const form = document.querySelector('.form__form');
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault(); // 👈 evita la recarga
+        // Aquí va tu lógica: enviar datos, mostrar mensaje, etc.
+        console.log('Formulario enviado sin recargar');
+    });
+</script>
+
+</html>
