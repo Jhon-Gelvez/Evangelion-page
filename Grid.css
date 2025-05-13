@@ -57,7 +57,7 @@ body {
     display: none;
     background-color: #1e1e1e;
     position: absolute;
-    height: 100vh;
+    height: 100dvh;
     width: 100%;
     top: 0;
     z-index: -1;
@@ -66,7 +66,7 @@ body {
 .header__nav-list {
     display: flex;
     flex-direction: column;
-    height: 40vh;
+    height: 40dvh;
     margin: auto;
     justify-content: space-evenly;
 }
@@ -152,7 +152,7 @@ body {
 .profile__img {
     max-width: 100%;
     width: 690px;
-    max-height: 90vh;
+    max-height: 90dvh;
 }
 
 h1 {
@@ -220,7 +220,7 @@ h1 {
     animation-timing-function: linear;
     animation-timeline: --bar;
     view-timeline: --bar block;
-    animation-range-end: cover 50%;
+    animation-range-end: contain 50%;
 }
 
 .profile__data-container .bar--01 {
@@ -230,7 +230,7 @@ h1 {
     animation-timing-function: linear;
     animation-timeline: --bar;
     view-timeline: --bar block;
-    animation-range-end: cover 50%;
+    animation-range-end: contain 50%;
 }
 
 .profile__data-container .bar--02 {
@@ -240,7 +240,7 @@ h1 {
     animation-timing-function: linear;
     animation-timeline: --bar;
     view-timeline: --bar block;
-    animation-range-end: cover 50%;
+    animation-range-end: contain 50%;
 }
 
 .profile__data-container .bar--03 {
@@ -250,7 +250,7 @@ h1 {
     animation-timing-function: linear;
     animation-timeline: --bar;
     view-timeline: --bar block;
-    animation-range-end: cover 50%;
+    animation-range-end: contain 40%;
 }
 
 /* ----ANIMATIONS ----*/
@@ -325,7 +325,7 @@ h1 {
 .portfolio {
     background-color: #121212;
     color: #ffffff;
-    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -351,7 +351,7 @@ h1 {
     width: 100%;
     gap: 12px;
     padding: 12px;
-    min-height: 80vh;
+    min-height: 80dvh;
 }
 
 .portfolio__project {
@@ -360,6 +360,9 @@ h1 {
     display: grid;
     place-content: center;
     min-height: 300px;
+    animation: aparecer both;
+    animation-timeline: view();
+    animation-range: cover 10% cover 100%;
 }
 
 .project-background--01 {
@@ -415,6 +418,17 @@ h1 {
     }
 }
 
+/* animaciones */
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 /* ----PORTFOLIO ENDS---- */
 
 /* ----CONTACT SECTION---- */
@@ -425,7 +439,7 @@ h1 {
     box-sizing: border-box;
     container-name: form;
     container-type: inline-size;
-    min-height: 50vh;
+    min-height: 50dvh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -602,7 +616,7 @@ h1 {
         box-sizing: border-box;
         container-name: form;
         container-type: inline-size;
-        min-height: 50vh;
+        min-height: 50dvh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -644,7 +658,7 @@ h1 {
 .footer {
     background-color: #1e1e1e;
     color: #fff;
-    min-height: 35vh;
+    min-height: 35dvh;
     display: flex;
     flex-direction: column;
     justify-content: center;
